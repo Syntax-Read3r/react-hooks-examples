@@ -9,6 +9,7 @@ import Layout from "./components/Layout";
 import UseState from "./pages/UseState";
 import UseReducer from "./pages/UseReducer";
 import UseEffect from "./pages/UseEffect";
+import UseRef from "./pages/UseRef";
 
 const router = createBrowserRouter([
 	{
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
 			{
 				path: "/useEffect",
 				element: <UseEffect />,
+			},
+			{
+				path: "/useRef",
+				element: <UseRef />,
 			},
 		],
 	},
