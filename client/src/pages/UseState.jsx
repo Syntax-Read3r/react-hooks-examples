@@ -22,6 +22,7 @@ function UseState() {
 
 	return (
 		<div>
+            <h1>useState Hook</h1>
 			<div>
 				<div>{counter}</div>
 				<button onClick={decrease}>-</button>
@@ -35,6 +36,7 @@ function UseState() {
 				/>
 				<div>{inputValue}</div>
 			</div>
+            <h2></h2>
 		</div>
 	);
 }
