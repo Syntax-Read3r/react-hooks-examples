@@ -1,8 +1,13 @@
 import React, { useState, createContext } from "react";
+
 import Login from "../components/Login";
 import User from "../components/User";
 
 import img from "../assets/img/useContext.png";
+import value from "../assets/img/valueContext.png";
+import getContext from "../assets/img/importContext.png";
+import usingContext from "../assets/img/using-useContextProvider.png";
+import zero from "../assets/img/start.png";
 
 export const AppContext = createContext(null);
 
@@ -58,6 +63,24 @@ function UseContext() {
 					the button is clicked, it will toggle between a light and dark theme
 					based on the current value of the context.
 				</p>
+				<div>
+					<div>
+						<h4>Stage Zero</h4>
+						<img src={zero} alt="" />
+					</div>
+					<div>
+						<h4>Stage One</h4>
+						<img src={value} alt="" />
+					</div>
+					<div>
+						<h4>Stage Two</h4>
+						<img src={getContext} alt="" />
+					</div>
+					<div>
+						<h4>Stage Three</h4>
+						<img src={usingContext} alt="" />
+					</div>
+				</div>
 			</div>
 			{/* When creating a ...Provider, you need to pass in a value. The value will be all the states and functions that you want to have access inside of it. */}
 			<AppContext.Provider value={{ username, setUsername }}>
