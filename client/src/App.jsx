@@ -11,6 +11,7 @@ import UseReducer from "./pages/UseReducer";
 import UseEffect from "./pages/UseEffect";
 import UseRef from "./pages/UseRef";
 import UseLayoutEffect from "./pages/UseLayoutEffect";
+import UseImperativeHandle from "./pages/useImperativeHandle";
 
 const router = createBrowserRouter([
 	{
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
 			{
 				path: "/useLayoutEffect",
 				element: <UseLayoutEffect />,
+			},
+			{
+				path: "/useImperativeHandle",
+				element: <UseImperativeHandle />,
 			},
 		],
 	},
